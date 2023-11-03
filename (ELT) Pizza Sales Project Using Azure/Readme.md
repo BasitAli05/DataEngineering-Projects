@@ -1,5 +1,5 @@
-** SQL Server -> ADF -> blob storage -> Databricks -> PowerBI
-** Extract and Load Data **
+#SQL Server -> ADF -> blob storage -> Databricks -> PowerBI
+###Extract and Load Data 
 1) first import the pizza_sales.csv into SQL server as table
 ![sqltable](https://github.com/BasitAli05/DataEngineering-Projects/assets/106751594/a0a5e584-7cab-445d-9f1f-e5d832e32855)
 2) create a resource group for this project 
@@ -24,7 +24,7 @@
 5) After the pipeline is run successfully, we can see that the SQL table is Extracted and loaded into blob storage
 ![blobstorage](https://github.com/BasitAli05/DataEngineering-Projects/assets/106751594/44fbed1d-c38e-475b-b87d-a0954851f6bd)
 
-** Connect storage to databricks **
+###Connect storage to databricks
 -) goto storage account -> access keys and copy 1 key
 -) Code for mounting your folder
 dbutils.fs.mount(
@@ -35,5 +35,5 @@ dbutils.fs.mount(
 )
 -) do some transformations as per requirements
 
-** Connect PowerBI with databricks **
+###Connect PowerBI with databricks
 -) here you can do all the visualizations and generate business insights
