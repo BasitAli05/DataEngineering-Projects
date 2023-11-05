@@ -10,9 +10,9 @@
    -) create lookup function/activity and write a query to find max(InsertTime) of sink table and pass it to copydata function
        -) The query will fetch the latest time at which the last record was added </pre>
    ![lookup](https://github.com/BasitAli05/DataEngineering-Projects/assets/106751594/f3ca8bb0-b80c-45ff-acf4-f08f705d903b)
-   -) create copydata function select source table and write query for fetching latest rows
+ <pre>   -) create copydata function select source table and write query for fetching latest rows </pre>
    ![copydata_source](https://github.com/BasitAli05/DataEngineering-Projects/assets/106751594/6982f054-4f9c-459f-b4c3-e708efc6ffad)
-   -) select sink table
+ <pre>   -) select sink table </pre>
    ![copydata_sink](https://github.com/BasitAli05/DataEngineering-Projects/assets/106751594/e694ec64-eb1d-44a1-ba47-ce673e7f527f)
 
 5) Now Add a new record in source table
