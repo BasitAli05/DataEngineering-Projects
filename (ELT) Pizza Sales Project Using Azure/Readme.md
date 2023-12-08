@@ -28,9 +28,9 @@
 <pre>-) goto storage account -> access keys and copy 1 key 
 -) Code for mounting your folder
 dbutils.fs.mount(
-  source = "wasbs://<container-name>@<storage-account>.blob.core.windows.net",
+  source = "wasbs://(container-name)@(storage-account).blob.core.windows.net",
   mount_point = "/mnt/folder_name",
-  extra_configs = {"fs.azure.account.key.mystorageproject01.blob.core.windows.net":"paste your access-key"}
+  extra_configs = {"fs.azure.account.key.(storage-account).blob.core.windows.net":"paste your access-key"}
   OR   {"fs.azure.account.key.mystorageproject01.blob.core.windows.net":dbutils.secret.get(scope = "<scope-name>", key = "<key-name>")}
 )
 -) do some transformations as per requirements
